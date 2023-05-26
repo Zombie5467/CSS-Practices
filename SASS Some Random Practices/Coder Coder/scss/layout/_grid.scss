@@ -1,0 +1,35 @@
+@use '../util' as u;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 2.5em;
+    width: min(100% - 40px, 1000px);
+    margin-inline: auto;
+    
+    // margin-inline: sirve para solo manejar el margin de izquierda y derecha, by Kevin Powell
+    // max-width: 1000px;
+    
+    @include u.breakpoint(large) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    &__main, &__sidebar {
+        padding: 2.5em;
+    }
+
+    &__main {
+        background-color: hsl(240, 99%, 33%);
+    }
+    
+    &__sidebar {
+        background-color: hsl(300, 100%, 30%);
+        text-align: center;
+
+       @include u.breakpoint-down(medium) {
+        text-align: center;
+       }
+    }
+}

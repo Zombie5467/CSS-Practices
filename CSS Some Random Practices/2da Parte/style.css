@@ -1,0 +1,943 @@
+*{ font-family: Arial, Helvetica, sans-serif; } 
+
+fieldset {
+    border: 1px solid #333;
+    
+}
+
+.name--legend{
+    color: #fff;
+}
+
+body{ 
+    min-height: 100vh; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    border-left: 1px solid #333; 
+    border-right: 1px solid #333; 
+    background-color: rgb(32, 31, 31);
+    padding-top: 60px;
+}
+
+
+
+
+/* Exercise 1g */
+.main1g--section {
+ /* background-color: aliceblue; */
+ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+ width: 30vh;
+ height: 10em;
+ padding: 20px;
+ margin: 0 auto;
+ border-radius: 10px;
+ font-weight: bold;
+}
+
+.main2f--section {
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 30vh;
+    height: 14em;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+   }
+
+
+
+/* Exercise 2f and 3f */
+.textBlue {
+    color: rgb(0, 133, 133);
+}
+
+.textGreen {
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+}
+
+.buttonCart, .buttonBuy{
+    padding: 8px 26px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(225, 216, 20);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.buttonBuy{
+    padding: 8px 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(225, 164, 28);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.textBlue:hover {
+    color: rgb(221, 151, 12)
+}
+
+.buttonStyle:hover {
+    opacity: 0.8;
+}
+
+.buttonStyle:active {
+    opacity: 0.6;
+}
+
+
+
+/* Exercise 5e 
+los ejercicios de la leccion 4 no los hice porque no me gustaron pero aplique algunos conocimientos de esa leccion en esta, por eso puse 4 y 5 en el titulo*/
+.main5e--section {
+    /* background-color: aliceblue; */
+   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 60vh;
+    height: 55vh;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+   }
+
+.textOrange {
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    margin-top: .2em;
+    margin-bottom: 0px;
+
+}
+
+.macPro {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: .3em;
+    margin-bottom:0;
+    
+}
+
+.main5e--section h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.blueButton {
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #2F6AD8;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+
+
+/* Exercise 5f */
+.main5f--section {
+    font-weight: 500;
+    text-align: start;
+    padding-left: 12em;
+    height: 100px;
+   
+}
+.mainNumber {
+    font-size: 30px;
+    
+    display: inline;
+}
+
+.grayText {
+    color: grey;
+    display: inline;
+}
+
+.todayText {
+    color: green;
+}
+
+.hoursText {
+    display: inline;
+}
+
+.redText {
+    color: red;
+    display: inline;
+}
+
+
+/* Nota: display inline hace que los elementos actuen como elementos en linea, evita el salto de linea y en este caso ha quitado los marging y padding de cada elemento, lo deje asi porque queda igual que el diseño original.
+
+Con la propiedad inline no se puede usar width ni height, si necesitamos estas propiedes y tambien inline, usamos inline block */
+
+
+
+/* Exercise 5g */
+.main5g--section {
+    margin-top: 4em;
+}
+
+.freeCodeCamp {
+    font-weight: bold;
+    display: inline;
+}
+
+.greyCodeCamp {
+    color: grey;
+    display: inline;
+}
+
+
+
+/* Exercise 7g */
+.tweet-bg {
+    background-color: #0D1117;
+    width: 50%;
+    height: 4em;
+    border-radius:40px;
+    padding-left: 1em;
+    margin: 0 auto;
+}
+
+.tweet-bg img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tweet-bg p {
+    color: #f0f6fc;
+    display: inline-block;
+    padding-left: 3px;
+}
+
+.tweet-bg button {
+    padding-top: 10px;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 16px 0 0 12em;
+    color: #f0f6fc;
+    font-weight: bold;
+    background-color: #2F6AD8;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+
+
+/* Exercise 8c */
+.main--google {
+    margin:0 0 0 13em;
+
+}
+
+.googleDiv {
+    height: 150px;
+    
+}
+
+.main--google img {
+    width: 250px;
+    padding: 0 0 0 5.8em;
+
+}
+
+.main--google input {
+    display: block;
+    width: 32em;
+    height: 2.2em;
+    margin: 0 0 22px 0;
+    border-radius: 20px;
+    border: 1px solid #807e7e;
+    background-color: rgb(32, 31, 31);
+
+}
+
+.searchBar:hover {
+    background-color: #303134;
+    border-style: none;
+}
+
+.buttonSearch {
+    padding: 9px 12px;
+    color: #f0f6fc;
+    background-color: #303134;
+    border: none;
+    border-radius: 4px;
+    margin-left: 6px;
+
+}
+
+.buttonSearch:hover {
+    border: 1px solid #807e7e; 
+
+}
+
+.rightPadding {
+    margin-left: 6em;
+}
+
+
+
+/* Exercise 9g & 10e */
+.social--main {
+    width: 180px;
+    height: 295px;
+    background-color: #0D1117;
+    color: #f0f6fc;
+    display: inline-block;
+    margin-left: 1em;
+    
+    
+}
+
+.social--img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    
+    
+}
+
+.social--name {
+    font-weight: bold;
+    margin: 8px 0 0 8px;
+   
+}
+
+.social--button {
+    color: #f0f6fc;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    background-color: #2F6AD8;
+    margin: 0 0 0 8px;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+
+.social-ppp {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social--friends {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 8px;
+}
+
+/* Nota personal, para poder alinear la ppp y el "p" mutual friends, sin grid o flex, tuve que poner una clase a la ppp y aplicar display: inline-block; y vertical-align: middle; pero tambien tuve que ponerle esos estipos al mutual friends, tambien tuve que poner a los dos en un mismo div */
+
+.social--user img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 8px 0 8px 8px ;
+}
+
+
+
+/* Exercise 11a, 11b and 11c */
+.ex11a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+    color: #f0f6fc;
+}
+
+.ex11b {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    color: #f0f6fc;
+}
+
+.ex11c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: #f0f6fc;
+    gap: 15px;
+}
+
+.fill {
+    background-color: #0D1117;
+    
+}
+
+.hole {
+    background-color: #303134;
+}
+
+
+
+/* Exercise 11d */
+.container--11d {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-flow:column;
+    column-gap: 5px;
+    justify-content: center;
+    
+}
+
+.main--11d {
+    width: 180px;
+    height: 295px;
+    color: #f0f6fc;
+}
+
+.main--11d img {
+    width: 180px;
+    height: 175px;
+    object-fit: cover;
+}
+
+.name--11d {
+    font-weight: bold;
+    margin: 8px 0 8px 8px;
+}
+
+.pic--11d--user {
+    display: grid;
+    grid-template-columns: 40px 2fr;
+    align-items: center;
+    margin: 0 0 5px 8px;
+    
+}
+
+.pic--11d--user img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn--11d {
+    color: #f0f6fc;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    background-color: #2F6AD8;
+    margin: 0 0 0 8px;
+    font-size: 15px;
+    display: inline-block;
+}
+    
+
+/* Exercise 12a, 12b and 12c */
+.ex12a {
+    display: flex;
+    color: #f0f6fc;
+}
+
+.a200px {
+    width: 200px;
+}
+
+.a75px {
+    width: 75px;
+}
+
+
+
+
+.ex12b {
+    display: flex;
+    flex-direction: row;
+    color: #f0f6fc;
+}
+
+.bitem1 {
+    width: 50px;
+}
+
+.bitem2 {
+  flex: 1;
+}
+
+.bitem3 {
+    width:75px ;
+}
+
+
+
+
+.ex12c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f0f6fc;
+}
+
+
+
+
+.ex12d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f6fc;
+    height: 50px;
+    border: 1px solid #333;
+}
+
+
+/* Exercise 12 */
+.main--12g {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 85px;
+    gap: 5px;
+    
+}
+
+.user--pic--12g img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 0 0 0 12px;
+}
+
+.user--txt--12g {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.user--12g,
+.name--12g,
+.rel--12g {
+    margin: 0 0 0 10px;
+    width:85px ;
+}
+
+.user--12g {
+   font-weight: bold; 
+   color: #f0f6fc;
+}
+
+.btn--12g button {
+    color: #f0f6fc;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    background-color: #2F6AD8;
+    margin: 0 12px 0 0;
+    
+}
+
+/* Exercise 13 */
+.main13a {
+    display: flex;
+    
+}
+
+.div13a {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.div13ab {
+    width: 300px;
+    height: 80px;
+}
+
+.item13a {
+    color: #f0f6fc;
+    background-color: #0D1117;
+    
+}
+
+.row-div {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.main--13c {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 8px;
+    width: 32em;
+    padding: 2px 16px 10px 16px;
+}
+
+.main--13c p {
+    color: gray;
+}
+
+.userPic--13c img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.mid--container__13c {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+.midTexFlex h3{
+    margin: 0 0 5px 0;
+}
+.midTexFlex p{
+    margin: 0;
+}
+
+.midTexFlex {
+    padding: 0 0 0 10px;
+}
+
+.mid--13c {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main--13f {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    width: 32em;
+    height: 210px;
+    /* align-items: start;
+    justify-content: start; */
+}
+
+.user--pic--13f {
+    margin: 10px 15px 0 15px;
+   
+}
+
+.user--pic--13f img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.upperSection p{
+    margin: 0;
+    
+}
+
+.upperInfo {
+    width: 25em;
+    margin: 0 0 15px 0;
+}
+
+.simpleText {
+    display: flex;
+    margin: 12px 0 5px 0;
+}
+
+.simpleUser {
+    font-weight: bold;
+}
+
+#simpleDev {
+    padding-left: 5px;
+    color: grey;
+    
+}
+
+.thumbnail-colum {
+    width: 100px;
+    height: 95px;
+    background-color: rgb(220, 220, 220);
+}
+
+.belowSection {
+    display: flex;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    
+}
+
+.belowSection p {
+    width: 15em;
+}
+
+.thumbnail-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 12px 0 0 12px;
+    
+}
+
+.video-website {
+    padding-bottom: 5px;
+    color: grey;
+  
+}
+
+.upperInfo,
+.video-info {
+    line-height: 22px;
+    
+}
+
+/* Exercise 14 */
+.bottom-right p{
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.right-sidebar {
+    background-color: green;
+    width: 100px;
+    color: white;
+    position: fixed;
+    height: 917px;
+    
+    right: 0;
+    bottom: 0;
+    width:  100px;
+}
+
+/* .modal-bg {
+    background-color:rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.modal-14c {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 120px;
+    padding: 5px 10px 20px 20px;
+    margin-bottom: 30px;
+}
+
+.user--13e {
+    margin-top: 5px;
+}
+.user--14e img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.main--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: white;
+
+    scroll-padding:1rem 0 0 0;
+}
+
+.user--container {
+    display: flex;
+    margin-left: 100px;
+}
+
+.button--container {
+    margin-right: 100px;
+}
+
+.btn-add {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 3px;
+}
+
+.btn-msg {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.main--discord {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}
+
+.user--discord {
+    background-color: #202225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    height: 100vh;
+    padding-top: 24px;
+    
+}
+.user--discord img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.info--discord {
+    background-color: #313131;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    padding-top: 5px;
+    
+}
+
+.plus--discord {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus--discord h4{
+    color: #DDDDDD;
+}
+
+.plus--discord i{
+    color: #8E9296;
+    font-size: 20px;
+}
+
+.hash--discord {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    padding-bottom: 15px;
+    color: #8E9296;
+}
+
+
+.vid-15 {
+    background-color: gray;
+    width: 320px;
+    height: 180px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    cursor: pointer;
+       
+}
+
+.timeStamp {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+
+
+.container-15e {
+    position: relative;
+    display: inline-block;
+    
+}
+/* debo investigar por que el uso este codigo, igual como en la clase vid-15, me parece que el uso fixet y yo relative, debo revisar */
+
+
+
+.picture-15e img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.ofert {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container--btn {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--btn button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+}

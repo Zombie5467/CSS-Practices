@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    background-color: lightseagreen;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+p {
+    font-size: 2em;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    margin: 6%;
+    
+}
+
+.card {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.card-img img{
+    width: 600px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box-shadow {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.568);
+}
+
+.drop-shadow {
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
+}

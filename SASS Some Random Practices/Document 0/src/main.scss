@@ -1,0 +1,143 @@
+// Variables
+$funete: 'Roboto', sans-serif;
+
+$a: #6cc;
+$b: #fff;
+
+//Mixin
+@mixin contenedor() {
+    max-width: 1250px;
+    margin: auto auto;
+}
+
+// js: justify-conetnt, ai: aling-items
+@mixin flexbox($js: unset, $ai: unset) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+}
+
+@mixin laptopXL {
+    @media (max-width: 1200px) {
+        @content 
+
+        
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $funete;
+    color: $b;
+}
+
+body {
+    // background-color: hsl(60, 2%, 12%);
+    @include contenedor();
+    // background-image: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to top, #373b44, #4286f4);
+    height: 100vh;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5625em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@for $i from 0 through 3 {
+     h#{$i + 1} {
+        font-size: 150px - ($i*40);
+     }
+
+    // no funciona con rem, no se por que
+    // por alguna razon en vez de dar valores como 70, da -70
+}
+
+// Diseños
+header {
+    @include flexbox(space-between, center);
+    margin-top: 2.1875em;
+    h4{
+        font-weight: 400;
+    }
+
+    nav {
+        display: flex;
+        gap: 1.5625em;
+
+        a:hover {
+            color: $a;
+        }
+    }
+
+    .redes {
+        a {
+            @include flexbox(unset, center);
+        }
+        img {
+            width: 40px;
+        }
+    }
+}
+
+main {
+    @include flexbox(space-between, center);
+    margin-top: 5.625em;
+    
+    h3 {
+        font-weight: 400;
+    }
+
+    h4 {
+        width: 28.125rem;
+    }
+
+    img {
+        width: 31.25rem;
+        margin-right: 3.4375em;
+    }
+
+}
+
+@include laptopXL(){
+    body {
+        text-align: center;
+        // height: auto;
+        
+    }
+
+    header {
+        flex-direction: column;
+        gap: 5px;
+
+        .redes a{
+            font-weight: 700;
+            margin: 0.9375em 1.5625em 0 0;
+        }
+        h4 {
+            margin-bottom: 0.625em;
+            font-size: 2.5rem;
+        }
+    }
+
+    main {
+        margin-top: 4.375em;
+        flex-direction: column;
+
+        img {
+            margin-top: 2.5rem;
+        }
+    }
+}
+

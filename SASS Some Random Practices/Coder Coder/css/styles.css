@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 2.625rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: rgb(32, 32, 31);
+  --text-color: aliceblue;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 2.5em;
+  width: min(100% - 40px, 1000px);
+  margin-inline: auto;
+}
+@media (min-width: 56.25em) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.grid__main, .grid__sidebar {
+  padding: 2.5em;
+}
+.grid__main {
+  background-color: hsl(240, 99%, 33%);
+}
+.grid__sidebar {
+  background-color: hsl(300, 100%, 30%);
+  text-align: center;
+}
+@media (max-width: 43.7485em) {
+  .grid__sidebar {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,226 @@
+/*---------- Estilos Generales ----------*/
+*{ font-family: Arial, Helvetica, sans-serif; } 
+
+fieldset {
+    border: 1px solid #333;
+    
+}
+
+.name--legend {
+    color: #fff;
+}
+
+body { 
+    min-height: 100vh; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    border-left: 1px solid #333; 
+    border-right: 1px solid #333; 
+    background-color: rgb(32, 31, 31);
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+
+.container {
+    /* width: 600px; */
+    display: flex;
+    gap: .375rem; /*6px*/
+    margin: 0 auto;
+    background-color: rgb(255, 70, 172);
+    padding: .625rem; /*10px*/
+    border: solid 8px rgb(129, 10, 84);
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+/*---------- Display Flex and Grow ----------*/
+.container div {
+    
+    background-color: lightseagreen;
+    padding: .625rem; /*10px*/
+    border: solid 5px purple;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+    
+}
+
+.item__g1 {
+    flex-grow: 2;
+
+    /* 
+        flex-shrink: 1; esto es basicamente el opuesto de grow, el valor asignado significa que se encojera esa cantidad de veces 
+    */
+}
+
+.item__g4 {
+    flex-grow: 4;
+}
+
+/*---------- Centrar Horizontal ----------*/
+.container--horizontal {
+    justify-content: center; /*Horizontal*/
+
+    /* 
+        align-items: start center end; Vertical
+        align-items: baseline; alinia en base al texto 
+        align-items: stretch; para que el item se estreche a todo el espacio 
+    */
+}
+
+/*---------- Flex Reverse ----------*/
+.container--reverse {
+    flex-direction: row-reverse;
+}
+
+/*---------- Flex Column ----------*/
+.container--column {
+    flex-direction: column;
+}
+
+/*---------- Flex Wrap ----------*/
+.container--wrap {
+    flex-wrap: wrap;
+
+    /* 
+        Short Hand
+        flex-flow: [flex-direction] [flex-wrap];
+        
+        otro Short Hand
+        flex: [flex-grow] [flex-shrink] [flex-basis];
+        flex: 0 1 auto; valor por defecto
+
+    */
+}
+
+/*---------- Flex Wrap y Align ----------*/
+.container--align {
+    flex-flow: row wrap;
+    align-content: space-around;
+    height: 600px;
+
+    /*
+        aling content requiere de esta condicion para funcionar, debe ser wrap y debe haber multilinea, osea que se haya desbordado el contenido (por eso el wrap)
+    */
+}
+
+.container--align div {
+    width: 100px;
+    height: 100px;
+}
+
+/*---------- ORDER ----------*/
+.item__1 {
+    order: 8;
+}
+.item__2 {
+    order: 7;
+}
+.item__3 {
+    order: 6;
+}
+.item__4 {
+    order: 5;
+}
+.item__5 {
+    order: 4;
+}
+.item__6 {
+    order: 3;
+}
+.item__7 {
+    order: 2;
+}
+.item__8 {
+    order: 1;
+}
+
+/*---------- FLEX BASIS ----------*/
+
+.item__f1 {
+    flex-basis: 60px;
+}
+
+.item__f2 {
+    flex-basis: 200px;
+}
+
+.item__f3 {
+    flex-basis: 100px;
+}
+
+.item__f4 {
+    flex-basis: 400px;
+}
+/* 
+    la diferencia de width y flex-basis es que con esta los items van a tomar lo mas que puedan del valor asignado
+    evitando asi que se desborden 
+*/
+
+
+/*---------- ALIGN SELF ----------*/    
+
+.self {
+    width: 500px;
+    height: 400px;
+}
+
+.self div{
+    width: 100px;
+    height: 100px;
+}
+
+.item__as5 {
+    align-self: end;
+}
+
+
+
+/*---------- Flex 1 ----------*/   
+.flex--1 > * {
+    
+    flex: 1;
+
+    /* 
+        Long Hand
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0; 
+    */
+}
+
+    /* 
+        Esto lo usamos para evitar dar margin a la hora de hacer responsive 
+    */
+.flex--1 {
+    flex-direction: column;
+}
+
+@media (min-width: 704px) {
+    .flex--1 {
+        flex-direction: row;
+    }
+}
+
+
+
+/*---------- Ish ----------*/
+.ish {
+flex-wrap: wrap;
+}
+
+.ish > * {
+    flex: 1 1 20%;
+}
+
+@media (min-width: 610px) {
+    .ish > * {
+         
+    }
+}

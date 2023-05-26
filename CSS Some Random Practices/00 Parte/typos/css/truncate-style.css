@@ -1,0 +1,92 @@
+html {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.main--13c {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 8px;
+    width: 32em;
+    padding: 2px 16px 10px 16px;
+}
+
+.main--13c p {
+    color: gray;
+}
+
+
+
+.userPic--13c img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+.mid--container__13c {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+
+.midTexFlex h3{
+    margin: 0 0 5px 0;
+}
+
+.midTexFlex p{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.midTexFlex {
+    padding: 0 0 0 10px;
+}
+
+.mid--13c {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* -webkit-line-clamp: 1; aqui decidimos cuantas lineas de texto se muestran
+
+en caso de que muetre mas lineas entonces el div se hace mas grande y por tanto la imagen se sale de su lugar, eso lo resuelvo con el codico comentado abajo */
+
+
+/* .userPic--13c {
+    
+    margin-bottom: 4.5em;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

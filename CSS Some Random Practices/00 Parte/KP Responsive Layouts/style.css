@@ -1,0 +1,57 @@
+/* General styles */
+*{  
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+} 
+
+fieldset {
+    border: 1px solid #333;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    
+}
+
+.name--legend {
+    color: #fff;
+}
+
+body { 
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    font-family: sans-serif;
+    background-color: rgb(32, 31, 31);
+}
+
+
+
+
+/* % instead of px */
+.percentages--container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: rgb(255, 70, 172);
+    border: solid 8px rgb(129, 10, 84);
+    border-radius: 8px;
+}
+
+.percentages--div {
+    height: 16.25rem;
+    background-color: lightseagreen;
+    border: solid 8px purple;
+    border-radius: 8px;
+}
+
+
+/* Use height just when is needed */
+.parent--height {
+    background-color: lightseagreen;
+    padding: 3em;
+}

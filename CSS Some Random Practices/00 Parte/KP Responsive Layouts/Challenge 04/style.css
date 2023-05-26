@@ -1,0 +1,132 @@
+/*------------- 
+    General 
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --color-container1:#F3EED9;
+    --color-container2:#222C2A;
+    --color-container3:#824936;
+
+    --font-title:3.75rem;     /*60px*/
+    --font-secondary:2.25rem; /*36px*/
+    --font-regular:1.3125rem; /*21px*/
+    --font-fine:1.125rem;     /*18px*/
+
+    --font-pdb: 900; /*Playfair Display Black */
+    --font-rr: 400; /*Roboto Regular*/
+    --font-rl: 300; /*Roboto Light*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #201f1f;
+    color: hsl(210, 3%, 71%);
+}
+
+
+
+/*------------- 
+     Hero 
+-------------*/
+.hero {
+    text-align: center;
+    background-color: var(--color-container1);
+    padding: 6.25em;
+    /* min-height: 660px; */
+    /* max-width: 1128px; */
+}
+
+.hero h2{
+    font-size: var(--font-fine);
+    font-weight: var(--font-rl);
+    text-transform: uppercase;
+    letter-spacing: 0.625em;
+}
+
+.hero h1{
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-secondary);
+    font-weight: var(--font-pdb);
+    width: 60%;
+    color: var(--color-container3);
+    margin: 0 auto;
+}
+
+
+
+/*------------- 
+  Mid Section 
+-------------*/
+
+.mid--container {
+    text-align: center;
+    padding: 4em;
+}
+
+.mid--container h2{
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-regular);
+    font-weight: var(--font-pdb);
+    color: var(--color-container3);  
+    margin-bottom: 1.875em; 
+}
+
+.mid--flex {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.mid--flex p{
+    text-align: start;
+    width: 45%;
+}
+
+
+
+/*------------- 
+   Article 1 
+-------------*/
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8125em;
+    background-color: var(--color-container2);
+    padding: 4em;
+}
+
+.article__text {
+    width: 45%;
+}
+
+.article__text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-regular);
+    font-weight: var(--font-pdb);
+    color: var(--color-container3);  
+    margin-bottom: 1.0625em; 
+}
+
+.article__img {
+    width: 40%;
+}
+
+.article__img img{
+    width: 100%;
+}
+
+.brown {
+    background-color: var(--color-container3);
+}
+
+.txt--color h2{
+    color: hsl(210, 3%, 71%);
+}

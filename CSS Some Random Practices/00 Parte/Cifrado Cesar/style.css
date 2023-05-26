@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --color-terminal: hsl(231, 14%, 19%);
+    --borde-redondo: 4px;
+}
+
+*{ font-family: 'Source Code Pro', monospace; } 
+
+body{ 
+    background-color: hsl(0, 2%, 12%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    /* quitando estilos por defecto  */
+}
+
+main {
+    padding: 1.5625rem;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+    border-radius: var(--borde-redondo);
+}
+
+h1{
+    margin: 0;
+}
+
+#input--original, #resultado {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#input--original {
+    margin: .625rem 0 0;
+    padding: .625rem;
+    color: aliceblue;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+#resultado {
+    height: 1.25rem;
+    color: #5af78d;
+    padding: 0 10px 10px;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+.rango {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.875rem;
+    text-align: center;
+    align-items: center;
+}
+
+input[type='range'] {
+    /* -webkit-appearance: none; */
+    /* esto es para quitar los estilos por defecto */
+    border-radius: var(--borde-redondo);
+    background: var(--color-terminal);
+    margin: 0;
+    padding: 0 .3125rem;
+    height: 1.25rem;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: aliceblue;
+    border-radius: 50%;
+    height: .625rem;
+    width: .625rem;
+}

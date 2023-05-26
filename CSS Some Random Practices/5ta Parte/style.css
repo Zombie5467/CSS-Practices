@@ -1,0 +1,142 @@
+/* 
+    Estilos Generales 
+-----------------------------
+*/
+*{ font-family: Arial, Helvetica, sans-serif; } 
+
+fieldset {
+    border: 1px solid #333;
+    
+}
+
+.name--legend{
+    color: #fff;
+}
+
+body{ 
+    min-height: 100vh; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    border-left: 1px solid #333; 
+    border-right: 1px solid #333; 
+    background-color: rgb(32, 31, 31);
+    padding-top: 60px;
+}
+
+/* h1 {
+    font-size: 4em;
+    color: #fff;
+} */
+
+/* 
+    Aspect Ratio 
+-----------------------------
+*/
+.aspect__ratio {
+    background-color: purple;
+    border-radius: 8px;
+    width: 20rem;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+
+    /* 
+        position: fixed;
+        inset: 0;
+        margin: auto; 
+    */
+}
+
+/* 
+    Scroll Snap Type 
+-----------------------------
+    */
+.container {
+    width: 20rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.container div {
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: white;
+    scroll-snap-align: center;
+}
+
+.container div:nth-child(1) {
+    background-color:darkcyan;
+}
+.container div:nth-child(2) {
+    background-color:cornflowerblue;
+}
+.container div:nth-child(3) {
+    background-color:darkturquoise;
+}
+.container div:nth-child(4) {
+    background-color:maroon;
+}
+.container div:nth-child(5) {
+    background-color:mediumslateblue;
+}
+
+/* 
+    Pointer Events 
+-----------------------------
+*/
+
+.pointer{
+    font-size: 4em;
+    pointer-events: none;
+    color: aqua;
+    animation: fade 1s ease-in 1s;
+
+    /* 
+        no se por que no funciona,
+        la diferencia de pointer events y display none
+        es que con el primero se puede usar animacion 
+    */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+/* 
+    hsl
+-----------------------------
+*/
+
+.container--hsl {
+    display: flex;
+}
+
+.container--hsl div {
+    min-width: 10rem;
+    font-size: 10rem;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.container--hsl div:nth-child(1) {
+    background-color:hsl(25, 50%, 50%);
+}
+.container--hsl div:nth-child(2) {
+    background-color:hsl(50, 50%, 50%);
+}
+.container--hsl div:nth-child(3) {
+    background-color:hsl(75, 50%, 50%);
+}
+

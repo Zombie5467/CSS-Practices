@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero {
+    background-image:url(media/wave.svg), linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: bottom;
+}
+
+/* .hero {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    position: relative;
+} */
+
+/* esta es la wave original que pide el tutorial */
+
+.hero__container {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+.hero__texts {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__picture {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__title {
+    font-size: 4rem;
+
+}
+
+.hero__paragraph {
+    margin: 12px 0 16px;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #264de4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 300;
+}
+
+.hero__img {
+    display: block;
+}
+
+ .hero_wave {
+    position: relative;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+ }
+ /* NOTA PERSONAL
+
+ 1 - la forma que tiene la wave no es la original del tutorial pero la deje asi porque me gusto mas esta, la original esta comentada debajo de la que deje.
+
+ 2 - hacer hover para el boton.
+ 
+ 3 - Hacer vercion responsive.
+
+ 4 - dar formato al documento. 
+ 
+ 5 - Idea 1: hacer 3 planes de subscripcion.
+ 
+ 6 - Idea 2: hacer un formulario que funcione con backend */

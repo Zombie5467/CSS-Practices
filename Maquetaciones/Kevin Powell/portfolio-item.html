@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- esta meta con ese content es para asegurarnos que la pagina trabaje bien dispositivos mobiles -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+     <!-- esto es un normalized y sirve para arrelgar algunos bugs y diferencias que hay entre los diferentes navegadores -->
+
+     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+
+    <script src="https://kit.fontawesome.com/de5f578256.js" crossorigin="anonymous"></script>
+
+    <!-- para que los iconos funcionen (de font awezome) tuve que hacerme una cuenta y tuve que poner este link -->
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="coec34cbfa5f6969b55c6b93d/img/devjane.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list"></ul> <!--esto indica que pertenece al class="nav" osea es una sub-section -->
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"> <a href="#services" class="nav__link">My services</a></li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"> <a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    
+    <section class="intro" id="">
+        <h1 class="section__title section__title--intro">The title<strong>of my project</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
+            <img src="coec34cbfa5f6969b55c6b93d/img/portfolio-01.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis, expedita itaque atque iusto provident quia. Deserunt quasi doloremque delectus ipsa? Vero, adipisci sint. Hic sequi animi fuga laboriosam doloremque?</p>
+        <img src="coec34cbfa5f6969b55c6b93d/img/services-bg.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum soluta deserunt velit culpa voluptas praesentium assumenda alias atque minima nemo iusto aliquam distinctio sunt facere eos, enim quis dolorem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum soluta deserunt velit culpa voluptas praesentium assumenda alias atque minima nemo iusto aliquam distinctio sunt facere eos, enim quis dolorem!</p>
+    </div>
+
+
+<!--footer-->
+<footer class="footer">
+    <a href="mailto:axcefire@gmail.com" class="footer__link">axcefire@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" target="_blank" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube-square"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" target="_blank" href="https://es-do.wordpress.org/download/"><i class="fa-brands fa-wordpress-simple"></i></a></li>
+    </ul>
+</footer>
+
+<script src="js.js"></script>
+
+
+</body>
+</html>
