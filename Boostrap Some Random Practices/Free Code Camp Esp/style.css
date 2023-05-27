@@ -1,0 +1,22 @@
+body {
+    background-color: hsl(240, 2%, 12%);
+}
+/* Barra de navegacion */
+.navbar {
+    padding: 2rem;
+    background-color: hsl(210, 11%, 96%);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Responsivo */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
