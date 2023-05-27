@@ -1,6 +1,20 @@
+/* Estilos Generales */
 body {
     background-color: hsl(240, 2%, 12%);
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
 /* Barra de navegacion */
 .navbar {
     padding: 2rem;
@@ -13,10 +27,41 @@ body {
 }
 
 
+/* Sección Hero */
+.hero {
+    background-color: #f5f6f7;
+    min-height: 30rem;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3em;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.hero__imagen {
+    width: 200px;
+    height: 200px;
+    margin: 1.25em;
+    /* aspect-ratio: 1; */
+    /* border-radius: 50%; reemplazado por la clase de bs rounded-circle */
+}
+
+
 
 /* Responsivo */
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero--imagen__inferior {
+        max-width: 600px;
     }
 }
