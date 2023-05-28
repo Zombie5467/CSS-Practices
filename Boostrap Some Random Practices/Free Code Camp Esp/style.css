@@ -15,6 +15,29 @@ h1 {
     font-family: 'Rubik Dirt', cursive;
 }
 
+.seccion--osrura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion--clara {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.seccion__titulo{
+    font-size: 2rem;
+    padding: 0.9375em 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion__texto{
+    font-size: 1.2rem;
+}
+
+
+
+
 /* Barra de navegacion */
 .navbar {
     padding: 2rem;
@@ -25,6 +48,9 @@ h1 {
     align-items: center;
     justify-content: space-between;
 }
+
+
+
 
 
 /* Sección Hero */
@@ -53,6 +79,78 @@ h1 {
 
 
 
+
+
+/* Sobre Mi */
+.sobre__mi {
+    /* height: 31.25em; */
+    /* padding: 0.625em; */
+    padding: 2em;
+}
+
+
+.sobre__mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+
+
+
+/* Experiencia */
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+/* .experiencia .row div {
+    height: 15.625rem;
+    border: 3px solid salmon; 
+    background-color: darkslateblue;
+} */
+
+.experiencia--titulo {
+    font-size: 1.5625rem;
+    font-weight: bolder;
+    margin: 0.625em 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a25;
+    padding: 10px 20px; 
+    border-radius: 50%;
+}
+
+.badges--contenedor {
+    font-size: 1.5625rem;
+    font-weight: bold;
+    margin: 0.625em 0;
+}
+
+.badge {
+    margin: 0.3125em;
+}
+
+
+
+
 /* Responsivo */
 @media screen and (max-width: 767px) {
     .navbar-brand {
@@ -61,7 +159,14 @@ h1 {
 }
 
 @media screen and (min-width: 700px) {
-    .hero--imagen__inferior {
+    .hero__imagen--inferior {
         max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .badges--contenedor {
+        /* height: 25px; */
+        background-color: #1b1b32;
     }
 }
