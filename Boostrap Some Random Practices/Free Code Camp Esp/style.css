@@ -31,10 +31,22 @@ h1 {
     font-family: 'Rubik Dirt', cursive;
 }
 
+.seccion--descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
 .seccion__texto{
     font-size: 1.2rem;
 }
 
+.texto--negro {
+    color: black;
+}
+
+/* .texto--blanco {
+    color: aliceblue;
+} */
 
 
 
@@ -150,6 +162,7 @@ h1 {
 
 
 
+/* Proyectos */
 
 /* Responsivo */
 @media screen and (max-width: 767px) {
