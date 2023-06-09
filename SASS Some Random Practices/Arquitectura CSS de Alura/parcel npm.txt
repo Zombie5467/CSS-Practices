@@ -1,0 +1,39 @@
+NOTA PERSONAL
+
+npm init -y
+
+npm install --save-dev parcel
+
+crear carpeta y poner el html, imágenes y todos los demás recursos en este folder (los paquetes json y la carpeta node modules no)
+
+en esa misma carpeta, hacer un index html y otra carpeta scss y dentro el archivo main.scss, linkear este ultimo al html
+
+en el archivo package.json
+
+ "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+
+
+luego
+npm run dev
+
+abrir el link localhost que crea este ultimo código
+
+git ignore para la carpeta node_modules
+
+ctrl + c para salir del parcel (cuando no queremos que siga trabajando)
+
+
+
+REFERENCIA:
+
+Diferencia de dev y build
+https://youtu.be/wYWf2m_yzBQ?list=PLotbx4ZAAUEQs4-oQRgopfi1HmyQu3JUI&t=846
+
+
+ABRIR EN OTRO LUGAR CON TODO LO QUE NECESITAMOS SIN SUBIR node_modules EN GitHub
+necesitamos tener el archivo package.json con la dependencia que instalamos (parcel)
+
+correr npm install en la terminal, esto buscara las dependencias y tomara todo lo que necesitamos de la carpeta node_modules
