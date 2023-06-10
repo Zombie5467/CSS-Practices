@@ -37,3 +37,6 @@ ABRIR EN OTRO LUGAR CON TODO LO QUE NECESITAMOS SIN SUBIR node_modules EN GitHub
 necesitamos tener el archivo package.json con la dependencia que instalamos (parcel)
 
 correr npm install en la terminal, esto buscara las dependencias y tomara todo lo que necesitamos de la carpeta node_modules
+
+
+
