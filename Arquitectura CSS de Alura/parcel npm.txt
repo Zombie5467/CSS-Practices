@@ -1,0 +1,113 @@
+NADA DE ESTO FUNCIONA EN GOOGLE DRIVE
+
+NOTA PERSONAL
+
+npm init -y
+
+npm install --save-dev parcel
+
+crear carpeta src y poner el html, imágenes y todos los demás recursos en este folder (los paquetes json y la carpeta node modules no)
+
+en esa misma carpeta, hacer un index html y otra carpeta scss y dentro el archivo main.scss y los 7-1, linkear el main.scss al html
+
+en el archivo package.json poner lo siguiente
+
+ "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+
+
+luego
+npm run dev
+
+abrir el link localhost que crea este ultimo código
+
+git ignore para la carpeta node_modules
+
+ctrl + c para salir del parcel (cuando no queremos que siga trabajando)
+
+
+
+REFERENCIA:
+
+Diferencia de dev y build
+https://youtu.be/wYWf2m_yzBQ?list=PLotbx4ZAAUEQs4-oQRgopfi1HmyQu3JUI&t=846
+
+
+ABRIR EN OTRO LUGAR CON TODO LO QUE NECESITAMOS SIN SUBIR node_modules EN GitHub
+necesitamos tener el archivo package.json con la dependencia que instalamos (parcel)
+
+correr npm install en la terminal, esto buscara las dependencias y tomara todo lo que necesitamos de la carpeta node_modules
+
+npm run dev para comenzar a trabajar
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+BOOTSTRAP:
+(con el npm run dev apagado)
+npm install bootstrap@5.3.0
+
+crear el archivo _bootstrap en la carpeta vendors y hacer un import del archivo bootstrap.scss en la carpeta node_modules
+
+en mi caso: @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+PARA EL JS:
+<script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+Eso va en el html antes de body, es ahi donde se ponen los archivos js por costumbre 
+(Recordar siempre fijarse siempre en poner la ruta correcta, eso es olo un ejemplo)
+
+POR ULTIMO Y MUY IMPORTANTE
+en el archivo main.scss 
+@import"vendors/bootstrap" (Recordar siempre fijarse siempre en poner la ruta correcta, eso es olo un ejemplo)
+
+npm run dev para trabajar, eso debería ser todo.
+ctrl + c para salir del parcel (cuando no queremos que siga trabajando)
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+GULP
+
+1 - npm init -y
+
+2 - npm install gulp gulp-sass sass --save-dev
+
+(en mi caso tambien tuve que hacer esto:npm install -g gulp-cli) para instalar gulp (no se porque)
+
+3 - Crear el archivo `gulpfile.js` y escribir esto:
+
+
+
+const { src, dest, watch, series } = require('gulp')
+const sass = require('gulp-sass')(require('sass'))
+
+function buildStyles() {
+    return src('index.scss')
+        .pipe(sass())
+        .pipe(dest('css'))
+}
+
+function watchTask() {
+    watch(['index.scss'], buildStyles)
+}
+
+exports.default = series(buildStyles, watchTask)
+
+
+
+4 - y luego correr gulp: gulp
+
+ctrl + c para salir (cuando no queremos que siga trabajando)
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+git amend
+
+
+
