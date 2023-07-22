@@ -263,6 +263,7 @@ Con la propiedad inline no se puede usar width ni height, si necesitamos estas p
     border-radius: 20px;
     border: 1px solid #807e7e;
     background-color: rgb(32, 31, 31);
+    padding: 4px 8px;
 
 }
 
