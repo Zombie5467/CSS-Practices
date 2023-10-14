@@ -1,8 +1,0 @@
-Modus Operandi SASS
-Crear mi propia libreria
-
-Variables:
-- Comenzando con los colores y su gerarquia
-- margenes
-- paddings
-- borders
